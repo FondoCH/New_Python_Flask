@@ -5,13 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <title>Hello from Flask</title>
-    {% if name %}
-        <h1>Hello {{name}}!</h1>
-    {% else %}
-        <h1>Hello, World</h1>
-    {% endif %}
+    
+    <button type="button" onclick='document.getElementById("me").innerHTML="Yes, I have seen it!"'><p id="me">Can you see this?</p></button>
+
+    <p></p>
+    <div>
+    <button type="button" onclick="document.getElementById('myImage').src='bulb on ii.JPG'">TurnON</button>
+
+    <img id="myImage" src="bulb off.JPG" style="width: 100px;">
+
+    <button type="button" onclick="document.getElementById('myImage').src='bulb off.JPG'">TurnOFF</button>
+
+    <p id="zoo"><button type="button" onclick="document.getElementById('myImage').scr='bulbblink.gif'">Blink</button></p>
+
+    </div>
 </body>
 </html>
